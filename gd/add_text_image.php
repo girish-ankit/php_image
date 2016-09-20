@@ -6,6 +6,7 @@ $width = 300;
 $height = 300;
 $image = imagecreate($width, $height);
 $image_name = 'images/test-image.jpg';
+$img_resolution = 99; // for jpeg it will be 0-99 and for png it will be 0-9
 
 
 $size = 30;
@@ -16,9 +17,9 @@ $font = "fonts/Roboto-Bold.ttf";
 $text = "Amrit Kaushik";
 
 
-$white = imagecolorallocate($image, 255, 255, 255);
+$white = imagecolorallocate($image, 95, 73, 255);
 $grey = imagecolorallocate($image, 128, 128, 128);
-$black = imagecolorallocate($image, 0, 0, 0);
+$black = imagecolorallocate($image, 255, 255, 255);
 
 // Get image Width and Height
 $image_width = imagesx($image);
@@ -42,7 +43,9 @@ imagettftext($image, $size, 0, $x, $y + 5, $grey, $font, $text);
 // Add the text
 imagettftext($image, $size, 0, $x, $y, $black, $font, $text);
 
-$output = imagejpeg($image, $image_name);
+$output = imagejpeg($image, $image_name, $img_resolution);
+
+
 if ($output) {
     //   echo 'Image has been saved';
 } else {

@@ -20,6 +20,8 @@
 	    <li><a href="create_image.php">#1>.Create Image First</a></li>
 	    <li><a href="create_save_image.php">#2>.Create Save Image</a></li>
 	    <li><a href="add_text_image.php">#3>.Add Text To Image</a></li>
+	    <li><a href="text_to_wallpaper.php">#3>.Add Text To WallPaper</a></li>
+	    <li><a href="resize_image.php">#3>.Resize Image (Maintaining Aspect Ratio with width:200px)</a></li>
 	</ul>
 
 
