@@ -14,6 +14,7 @@ $image_ration = $image_width / $image_height;
 
 $newwidth = $set_width;
 $newheight = round(($image_height / $image_width) * $set_width);
+$newheight = ($image_height / $image_width) * $set_width;
 
 
 $thumb_name = 'images/resize_image.jpg';
