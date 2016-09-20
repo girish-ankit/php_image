@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<title>Image Crop Functionality</title>
+	<title>Image Database Upload Functionality</title>
 
     </head>
     <body>
