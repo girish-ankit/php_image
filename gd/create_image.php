@@ -8,4 +8,6 @@ $imageColor = imagecolorallocate($image, 95, 73, 255);
 
 imagejpeg($image);
 
+imagedestroy($image);
+
 

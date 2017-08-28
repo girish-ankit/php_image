@@ -11,5 +11,5 @@ if ($output) {
 } else {
     echo 'Image has not been saved';
 }
-
+imagedestroy($image);
 
